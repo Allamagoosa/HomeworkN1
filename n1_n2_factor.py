@@ -23,17 +23,17 @@ def factorial_recursive(x):
         return x*factorial_recursive(x-1)
 
 
-def viete(b=-5, c=6):
+def viete(b=16, c=60):
     """Test==========
-    >>> viete(-4, 4)
-    (2, 2)
+    >>> viete(16, 60)
+    (-6, -10)
     """
 
     x1 = None
     x2 = None
     x = (None, None)
-    for i in range(-10, 11):
-        for j in range (-10, 11):
+    for i in range(-1000, 1000):
+        for j in range (-1000, 1000):
             if (i+j == -b) and (i*j == c):
                 x = (i, j)
     return x
